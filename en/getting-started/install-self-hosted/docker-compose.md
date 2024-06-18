@@ -22,6 +22,7 @@ Navigate to the docker directory in the Dify source code and execute the followi
 
 ```bash
 cd dify/docker
+cp .env.example .env
 docker compose up -d
 ```
 
@@ -70,6 +71,12 @@ docker compose down
 docker compose pull
 docker compose up -d
 ```
+
+#### Sync Environment Variable Configuration (Important)
+
+* If the `.env.example` file has been updated, be sure to modify your local `.env` file accordingly.
+
+* Check and modify the configuration items in the `.env` file as needed to ensure they match your actual environment. You may need to add any new variables from `.env.example` to your `.env` file, and update any values that have changed.
 
 ### Access Dify
 
